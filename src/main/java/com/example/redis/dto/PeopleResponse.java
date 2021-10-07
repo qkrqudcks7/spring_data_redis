@@ -3,9 +3,11 @@ package com.example.redis.dto;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
+import java.io.Serializable;
+
 @Data
 @AllArgsConstructor
-public class PeopleResponse {
+public class PeopleResponse implements Serializable {
 
     private Long id;
 

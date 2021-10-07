@@ -34,6 +34,7 @@ public class RedisRepositoryConfig extends CachingConfigurerSupport {
         return new LettuceConnectionFactory(redisHost,redisPort);
     }
 
+    @Bean
     @Override
     public CacheManager cacheManager() {
         RedisCacheManager.RedisCacheManagerBuilder builder =
